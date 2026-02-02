@@ -19,7 +19,7 @@ public class workdone {
         System.out.println(res);
     }
 
-    public static int findLcmArr(int[] a){
+    public static int findLcmArr(int[] a){ // 6,2
         int res = a[0];
         for(int i=1;i<a.length;i++){
             res = findLcm(res,a[i]);

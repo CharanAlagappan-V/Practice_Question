@@ -1,7 +1,7 @@
 public class encodedString {
     public static void main(String[] args) {
-        String str = "ab2cd2";
-        int k = 4;
+        String str = "ab12c3";
+        int k = 5;
 
         String res = "";
 
@@ -16,12 +16,11 @@ public class encodedString {
                 num = num*10+Integer.parseInt(String.valueOf(str.charAt(i)));
                 i++;
             }
-            for(int j=1;j<num;j++){
-                substr = substr + substr;
+            for(int j=1;j<=num;j++){
+                res =res + substr;
             }
-            res = res + substr;
-            i--;
             System.out.println(res);
+            i--;
         }
 
         System.out.println(res.charAt(k-1));
